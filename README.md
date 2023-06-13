@@ -58,27 +58,82 @@ TODO: add image of what it should look like
   <summary>A breakdown of what each of the imports does</summary>
   
   ```python
-  SOME CODE GOES HERE
+  from selenium import webdriver                           # so we can instantiate a WebDriver
+  from selenium.webdriver.common.keys import Keys          # let's us 'type' things in the browser (i.e. in the searchbar)
+  from selenium.webdriver.chrome.options import Options    # so we can configure our WebDriver settings (e.g. how verbose it should be)
+  from selenium.webdriver.common.by import By              # to let selenium find elements *by* different identifiers (e.g. by class)
   ```
 </details>
 
-🌟 With that all sorted let's set up our webdriver.
+With that all sorted let's set up our webdriver.
 <br><br>
 
-### WebDriver
+## 1. Configuring the WebDriver
+Most of the time the following code won't change from project-to-project so don't feel bad just copy-pasting it whenever you need it!
+```python
+# SETTING UP BROWSER
+#-----------------------
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--log-level=3")
+browser = webdriver.Chrome(options=chrome_options)
+browser.set_window_size(1080, 960)
+```
+
+
+**The Breakdown**
+<br>
+- `chrome_options = Options()` allows you to configure your WebDriver to suit your needs. There are a gazillion-and-one different [option arguments](https://peter.sh/experiments/chromium-command-line-switches/) you can add and experiment with.
+
+- `chrome_options.add_argument("--headless")` makes sure that when you run the code, the actual chrome browser doesn't pop up. Comment this out for now 🤓
+
+- `chrome_options.add_argument("--log-level=3")` to only show me serious warnings (thank me later)
+     - INFO = 0, WARNING = 1, LOG_ERROR = 2, LOG_FATAL = 3.
+ 
+- `browser = webdriver.Chrome(options=chrome_options)` instantiates a ChromeDriver with the options we chose
+- `browser.set_window_size(1080, 960)` is just for funsies and, I think, pretty self-explanatory
+
+<br>
+
+> **N.B.** You do not have to call your WebDriver 'browser', this is just a personal preference for me. Often when you read things online it will either be called **browser** or **driver**
+
+<br>
+
+## 2. Navigating to URLs
+For the sake of this 'tutorial', we will be navigating to, and scraping from, **Reddit** as it is and, should continue to be, legal to scrape from. Please always make sure you double check the rules different sites have on web-scraping **_before_** you start a project! 
+```python
+# TO REDDIT WE GO
+#-----------------------
+reddit_url = "https://www.reddit.com"
+browser.get(reddit_url)
+```
+
+<br>
+
+## 3. Interacting with the UI
+But, quite frankly, it's not enough to just _go_ to a website, we also want to be able to _interact_ with it, right? Trick question: Right! Interacting with a website could mean:
+- Clicking on a button
+- Typing in a searchbar or comment section
+- Pressing enter
+- Scrolling 
+- etc
+
+To keep things simple we'll just be focusing on the first three... but before we can do that we need to know how to **find** the elements we want to interact with. How do we find a button to click? Or a searchbar to type in? Check below!
+
+### Finding Elements
+There are several different ways to [locate elements on a webpage using selenium](https://selenium-python.readthedocs.io/locating-elements.html). Here are the 4 methods I use most frequently:
+
+| Method                                            | Element View | Inspect Element View |
+|---------------------------------------------------|--------------|----------------------|
+| browser.find_element(By.ID, "id")                 |              |                      |
+| browser.find_element(By.CLASS_NAME, "class name") |              |                      |
+| browser.find_element(By.NAME, "name")             |              |                      |
+| browser.find_element(By.XPATH, """"xpath"""")     |              |                      |
 
 
 <br>
 
-### Navigating to URLs
-
-<br>
-
-### Interacting with UI
-
-<br>
-
-#### Finding Elements
+### Using Elements
 
 
 <br>
@@ -92,6 +147,8 @@ TODO: add image of what it should look like
 <br>
 
 # Resources
+- [84 Popular Sites on the Internet that you can scrape](https://github.com/brendanbailey/Medium/blob/master/robots_txt/wikipedia_popular_sites.csv)
+- [Figuring out whether or not you can scrape a site](https://medium.com/@brendangallegobailey/scraping-the-internets-most-popular-websites-a4c6f0be382d)
 
 
 <br><br>

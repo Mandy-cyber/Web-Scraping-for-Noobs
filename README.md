@@ -219,6 +219,7 @@ If you are actually reading this section, you are a nerd and I deeply appreciate
 # Resources
 - [84 Popular Sites on the Internet that you can scrape](https://github.com/brendanbailey/Medium/blob/master/robots_txt/wikipedia_popular_sites.csv)
 - [Figuring out whether or not you can scrape a site](https://medium.com/@brendangallegobailey/scraping-the-internets-most-popular-websites-a4c6f0be382d)
+- [My homemade SubRedditScraper python pip package😊](https://pypi.org/project/sreddit/)
 
 
 <br><br>

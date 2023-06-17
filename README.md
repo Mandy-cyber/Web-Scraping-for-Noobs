@@ -51,10 +51,8 @@ pip install pysqlite3      # or pip3 install pysqlite3
 
 
 # Coding Time
-Alrighty, assuming that is all done, it's time to get coding! To start, go ahead and open the `scraper.py` file that came with this repository. It should look like this:
-```
-TODO: add image of what it should look like
-```
+Alrighty, assuming that is all done, it's time to get coding! To start, go ahead and open the `scraper.py` file that came with this repository.
+
 <details>
   <summary>A breakdown of what each of the imports does</summary>
   
@@ -225,7 +223,9 @@ Trust me, I have been there and **done that**. This is usually because:
 
 # Optional Features
 If you are actually reading this section, you are a nerd and I deeply appreciate you for it ❤️.
-
+```
+TODO: do this section later
+```
 
 
 

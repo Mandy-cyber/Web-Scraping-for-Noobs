@@ -36,9 +36,10 @@ We will be scraping using something called a **ChromeDriver**--a type of WebDriv
 1. To download a ChromeDriver first check what `version` of Google Chrome you are currently running.
 2. Then navigate [here](https://chromedriver.chromium.org/downloads) and click the download that matches the version number you just found.
 3. Finally, `extract` the chromedriver.exe file and save it in the **same** folder as your code
-```
-TODO: add gif of walkthrough
-```
+
+<div align="center">
+  <img src="https://github.com/Mandy-cyber/Web-Scraping-for-Noobs/assets/67931161/e4a1f12e-7fed-486e-b92f-567ffc6bb0c7" height="400px"/>
+</div>
 
 ### 4. SQLite3 [_(for optional feature)_](#optional-features)
 If you're interested in storing the results of your scraping in a quick and simple database or csv file!
@@ -208,6 +209,20 @@ Great question! There's a hierarchy of element identification that we typically 
 
 <br>
 
+<details>
+  <summary>🤔Why do I keep getting Chromedriver-related errors?</summary>
+  <br>
+  
+Trust me, I have been there and **done that**. This is usually because:
+  - you have not stored your chromedriver in the *same folder as your code*
+  - you accidentally downloaded the wrong chromedriver version
+  - between now and the last time you ran your code a couple of days/weeks/months ago, your chromedriver got updated...
+  
+  
+</details>
+
+<br>
+
 # Optional Features
 If you are actually reading this section, you are a nerd and I deeply appreciate you for it ❤️.
 
@@ -219,7 +234,7 @@ If you are actually reading this section, you are a nerd and I deeply appreciate
 # Resources
 - [84 Popular Sites on the Internet that you can scrape](https://github.com/brendanbailey/Medium/blob/master/robots_txt/wikipedia_popular_sites.csv)
 - [Figuring out whether or not you can scrape a site](https://medium.com/@brendangallegobailey/scraping-the-internets-most-popular-websites-a4c6f0be382d)
-- [My homemade SubRedditScraper python pip package😊](https://pypi.org/project/sreddit/)
+- [My homemade SubRedditScraper python pip package😊](https://pypi.org/project/sreddit/) -- fixing this rn it's so old so reviewers ignore for now LOL
 
 
 <br><br>

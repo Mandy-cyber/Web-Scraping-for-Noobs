@@ -169,6 +169,10 @@ searchbar.send_keys(Keys.RETURN) # presses 'Enter' (the same as clicking the sea
 <br>
 
 ## 4. Putting it all together
+
+<img src="https://github.com/Mandy-cyber/Web-Scraping-for-Noobs/assets/67931161/926bd4a3-3244-4c54-9743-8b31e1c9981a"/>
+
+
 **Trust me** with the above skills we just covered you are 90% of the way to launching your own scraper! Let's just put the final few pieces together. Here's the plan:
 1. Search for "Beans" in the searchbar on Reddit's homepage
 2. Click the `r/Beans` subreddit link
@@ -581,7 +585,7 @@ Trust me, I have been there and **done that**. This is usually because:
 
 </details>
 
-<br>
+<br><br>
 
 # Optional Features
 If you are actually reading this section, you are a nerd and I deeply appreciate you for it ❤️.
@@ -589,9 +593,11 @@ If you are actually reading this section, you are a nerd and I deeply appreciate
 TODO: do this section later
 ```
 
-
-
 <br>
+  
+  
+<img src="https://github.com/Mandy-cyber/Web-Scraping-for-Noobs/assets/67931161/4dde57df-4a6f-426a-a1a1-6175607185af"/>
+
 
 # Resources
 - [Python Selenium Documentation](https://selenium-python.readthedocs.io/index.html)

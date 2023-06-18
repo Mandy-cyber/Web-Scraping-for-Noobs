@@ -38,7 +38,7 @@ We will be scraping using something called a **ChromeDriver**--a type of WebDriv
 3. Finally, `extract` the chromedriver.exe file and save it in the **same** folder as your code
 
 <div align="center">
-  <img src="https://github.com/Mandy-cyber/Web-Scraping-for-Noobs/assets/67931161/e4a1f12e-7fed-486e-b92f-567ffc6bb0c7" height="400px"/>
+  <img src="images/CHROME.gif" height="400px"/>
 </div>
 
 ### 4. SQLite3 [_(for optional feature)_](#optional-features)
@@ -170,7 +170,7 @@ searchbar.send_keys(Keys.RETURN) # presses 'Enter' (the same as clicking the sea
 
 ## 4. Putting it all together
 
-<img src="https://github.com/Mandy-cyber/Web-Scraping-for-Noobs/assets/67931161/926bd4a3-3244-4c54-9743-8b31e1c9981a"/>
+<img src="images/BEANS.gif"/>
 
 
 **Trust me** with the above skills we just covered you are 90% of the way to launching your own scraper! Let's just put the final few pieces together. Here's the plan:
@@ -498,7 +498,7 @@ python scraper.py     # or python3 scraper.py
 # The Results
 Your final product should (*fingers crossed*) look a bit like this:
 
-<img src="https://github.com/Mandy-cyber/Web-Scraping-for-Noobs/assets/67931161/9f77eab0-3021-43e7-aad4-971f376b102e" height="500px"/>
+<img src="images/RESULT.gif" height="500px"/>
 
 <br>
 
@@ -596,7 +596,7 @@ TODO: do this section later
 <br>
   
   
-<img src="https://github.com/Mandy-cyber/Web-Scraping-for-Noobs/assets/67931161/4dde57df-4a6f-426a-a1a1-6175607185af"/>
+<img src="images/FINAL.gif"/>
 
 
 # Resources

@@ -589,9 +589,7 @@ Trust me, I have been there and **done that**. This is usually because:
 
 # Optional Features
 If you are actually reading this section, you are a nerd and I deeply appreciate you for it ❤️.
-```
-TODO: do this section later
-```
+
 
 <br>
   
@@ -603,7 +601,7 @@ TODO: do this section later
 - [Python Selenium Documentation](https://selenium-python.readthedocs.io/index.html)
 - [84 Popular Sites on the Internet that you can scrape](https://github.com/brendanbailey/Medium/blob/master/robots_txt/wikipedia_popular_sites.csv)
 - [Figuring out whether or not you can scrape a site](https://medium.com/@brendangallegobailey/scraping-the-internets-most-popular-websites-a4c6f0be382d)
-- [My homemade SubRedditScraper python pip package😊](https://pypi.org/project/sreddit/) -- fixing this rn it's so old so reviewers ignore for now LOL
+- [My homemade SubRedditScraper python pip package😊](https://github.com/Mandy-cyber/SubRedditScraper) -- fixing this rn LOL, but you can check out the source code here
 
 
 <br><br>

@@ -1,7 +1,7 @@
 # Web Scraping for Noobs
 
 ### Table of Contents
-| [Introduction](#introduction) | [Setting Up](#setting-up) | [Coding Time](#coding-time) | [The Results](#the-results) | [Optional Features](#optional-features) | [Resources](#resources) |
+| [Introduction](#introduction) | [Setting Up](#setting-up) | [Coding Time](#coding-time) | [The Results](#the-results) | [Optional Feature](#optional-feature) | [Resources](#resources) |
 |-------------------------------|---------------------------|-----------------------------|-----------------------------|-----------------------------------------|-------------------------|
 
 _haha, get it, it's an actual table 🤭_
@@ -41,7 +41,7 @@ We will be scraping using something called a **ChromeDriver**--a type of WebDriv
   <img src="images/CHROME.gif" height="400px"/>
 </div>
 
-### 4. SQLite3 [_(for optional feature)_](#optional-features)
+### 4. SQLite3 [_(for optional feature)_](#optional-feature)
 If you're interested in storing the results of your scraping in a quick and simple database or csv file!
 ```python
 pip install pysqlite3      # or pip3 install pysqlite3

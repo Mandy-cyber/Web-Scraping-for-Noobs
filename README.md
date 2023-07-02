@@ -628,11 +628,14 @@ def add_to_database(db_file_name, titles):
 
 ```
 
+<br>
+
 ### Sample Result
 <img src="images/SQLITE.png" height="500px"/>
 
 
-  
+<br>
+<hr>  
 <br><br>  
 <img src="images/FINAL.gif"/>
 

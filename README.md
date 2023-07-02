@@ -585,15 +585,55 @@ Trust me, I have been there and **done that**. This is usually because:
 
 </details>
 
-<br><br>
+<br>
 
-# Optional Features
+# Optional Feature
 If you are actually reading this section, you are a nerd and I deeply appreciate you for it ❤️.
 
-
+Now, _what's the fun_ of scraping all these titles if they're just printed into the terminal and then... **nothing**! What if you want to do something else with them outside your program? Or track changes over time? Or do something else fun? The answer is simple: **store it** in a file! I, personally, am a fan of a good ole' **`.db file`**. 
 <br>
+
+### Code
+> N.B. - you can also choose to add the titles to the database as soon as they are found, instead of adding them all at the end. Your choice! Both come with pros and cons you can ask me about😝
+
+Here is how you can create a db file to host all the titles you've found:
+
+```python
+import sqlite3 # add this to the imports
+
+....
+....
+
+def add_to_database(db_file_name, titles):
+  """
+  Creates a new table in a .db file, if one doesn't already exist, to hold the information 
+  found in the subreddit.
+
+  Args:
+    db_file_name (str): the name of the database file to open
+    titles (list of str): the list of titles to add to the database
+  """
+  # create the database
+  conn = sqlite3.connect(db_file_name)
+  cursor = self.conn.cursor()
+  createTable = """CREATE TABLE IF NOT EXISTS
+  srinfo(id INTEGER PRIMARY KEY autoincrement, title TEXT)"""
+  cursor.execute(createTable)
+
+  # add to database
+  for title in titles:
+      cursor.execute("INSERT INTO {table_name} (title) VALUES(?)"
+                          .format(table_name='srinfo'),(title,))
+  conn.commit()
+
+```
+
+### Sample Result
+<img src="images/SQLITE.png" height="500px"/>
+
+
   
-  
+<br><br>  
 <img src="images/FINAL.gif"/>
 
 

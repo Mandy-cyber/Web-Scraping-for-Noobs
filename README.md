@@ -644,7 +644,13 @@ def add_to_database(db_file_name, titles):
 - [Python Selenium Documentation](https://selenium-python.readthedocs.io/index.html)
 - [84 Popular Sites on the Internet that you can scrape](https://github.com/brendanbailey/Medium/blob/master/robots_txt/wikipedia_popular_sites.csv)
 - [Figuring out whether or not you can scrape a site](https://medium.com/@brendangallegobailey/scraping-the-internets-most-popular-websites-a4c6f0be382d)
-- [My homemade SubRedditScraper python pip package😊](https://github.com/Mandy-cyber/SubRedditScraper) -- fixing this rn LOL, but you can check out the source code here
+
+### Oh, and...
+I have a pip package you can download if you're interested in doing more subreddit scraping without all the code! To install:
+```python
+pip install sreddit
+```
+For usage, and documentation, you can see my [source code😊](https://github.com/Mandy-cyber/SubRedditScraper).
 
 
 <br><br>
